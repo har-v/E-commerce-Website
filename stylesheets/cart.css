@@ -1,0 +1,179 @@
+body{
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    position:relative;
+    padding:0 50px 10px 0;
+    text-align: left;
+    font-weight: bold;
+    top:140px;
+    color: black;
+    left: 14.5%;
+}
+
+.table6 {
+    width: 70%;
+}
+
+.table6  td {
+    padding: 30px 0;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 18px;
+}
+
+/*total -- moves it to the right*/
+.table6 thead td:last-child {
+    text-align: right;
+}
+
+/*total price -- moves it to the right*/
+.table6 tbody td:last-child {
+    text-align: right;
+}
+
+.table6 .remove {
+    color: #777777;
+    font-size: 12px;
+    padding-top: 3px;
+}
+.table6 .remove:hover {
+    text-decoration: underline;
+}
+.table6 .price {
+    color: #999999;
+}
+.table6 a {
+    text-decoration: none;
+    color: #555555;
+}
+.table6 input[type="number"] {
+    width: 68px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #555555;
+    border-radius: 5px;
+}
+.subtotal {
+    text-align: right;
+    padding: 40px 0;
+}
+.subtotal .text {
+    padding-right: 40px;
+    font-size: 18px;
+}
+.subtotal .price {
+    font-size: 18px;
+    color: #999999;
+}
+.buttons {
+    text-align: right;
+    padding-bottom: 40px;
+}
+.buttons input[type="submit"] {
+    padding: 12px 20px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttons input[type="submit"]:hover {
+    border-color: #d3d3d3;
+    background-color: black;
+    color: white;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    margin-left: -100px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    margin-left: -50px;
+}
+
+
+
+/*right css*/
+.title2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    position:relative;
+    padding:0 50px 10px 0;
+    text-align: left;
+    font-weight: bold;
+    top:140px;
+    color: black;
+    left: 19%;
+}
+
+/* Style buttons */
+.btn {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+form input[type="text"] {
+    width: 331px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    outline: none;
+}
+
+select {
+    width: 170px;
+    margin-left: 50px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-top: 15px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    outline: none;
+}
+
+
+@media (max-width: 575.98px){
+    .leftcolumn {
+        float: left;
+        width: 75%;
+        margin-left: 100px;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 75%;
+        margin-left: 100px;
+
+    }
+
+    form input[type="text"] {
+        margin-left: -15px;
+    }
+
+
+
+
+
+
+
+}

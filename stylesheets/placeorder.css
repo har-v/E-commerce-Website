@@ -1,0 +1,46 @@
+body {
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    position:relative;
+    padding:0 50px 10px 0;
+    text-align: left;
+    font-weight: bold;
+    top:100px;
+    color: black;
+    left: 37%;
+}
+
+p {
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 180px;
+    margin-left: 25%;
+}
+
+.text {
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 35%;
+}
+
+
+
+@media (max-width: 575.98px){
+    h1 {
+        left: 20%;
+    }
+
+    p {
+        margin-left: 1%;
+    }
+
+    .text {
+    margin-left: 10%;
+    }
+}

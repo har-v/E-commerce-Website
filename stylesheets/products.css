@@ -1,0 +1,229 @@
+.table3 th {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    position:relative;
+    padding:0 50px 10px 0;
+    text-align: left;
+    font-weight: bold;
+    top:-50px;
+    color: black;
+    right: 5%;
+}
+
+.table3 td {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    position: relative;
+    padding:0 100px 16px 0;
+    text-align: left;
+    font-weight: bold;
+    top:10px;
+    color: black;
+    z-index: 1;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 107px;
+}
+
+.name{
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.price{
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+@media (max-width: 575.98px){
+    .table3 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 30px;
+        position:relative;
+        padding:0 50px 10px 0;
+        text-align: center;
+        font-weight: bold;
+        top: -25px;
+        color: black;
+        right: -15%;
+    }
+
+    .table3 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding-right: 1px;
+        text-align: left;
+        font-weight: bold;
+        top: 10px;
+        left: -15px;
+        color: black;
+        display: inline;
+        z-index: 1;
+    }
+
+    .products {
+        margin-top: -40px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 600px){
+    .table3 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 30px;
+        position:relative;
+        padding:0 50px 10px 0;
+        text-align: left;
+        font-weight: bold;
+        top: 5px;
+        color: black;
+        right: 65px;
+    }
+    .table3 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding:0 40px 16px 0;
+        text-align: left;
+        font-weight: bold;
+        top:50px;
+        left: -70px;
+        color: black;
+        z-index: 1;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-left: -20px;
+        margin-top: 80px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 750px){
+    .table3 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 30px;
+        position:relative;
+        padding:0 50px 10px 0;
+        text-align: left;
+        font-weight: bold;
+        top: -10px;
+        color: black;
+        right: 100px;
+    }
+    .table3 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding:0 65px 16px 0;
+        text-align: left;
+        font-weight: bold;
+        top:40px;
+        left: -85px;
+        color: black;
+        z-index: 1;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px;
+        margin-left: -47px;
+    }
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (min-width: 998px){
+    .table3 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 30px;
+        position:relative;
+        padding:0 50px 10px 0;
+        text-align: left;
+        font-weight: bold;
+        top: -10px;
+        color: black;
+        right: 130px;
+    }
+
+    .table3 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding:0 100px 16px 0;
+        text-align: left;
+        font-weight: bold;
+        top: 50px;
+        left: -95px;
+        color: black;
+        z-index: 1;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 130px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table3 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 30px;
+        position:relative;
+        padding:0 50px 10px 0;
+        text-align: left;
+        font-weight: bold;
+        top:-10px;
+        color: black;
+        right: 75px;
+    }
+
+    .table3 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding:0 100px 16px 0;
+        text-align: left;
+        font-weight: bold;
+        top: 50px;
+        margin-right: 20%;
+        color: black;
+        z-index: 1;
+    }
+
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 107px;
+        margin-left: -100px;
+        margin-top: 30px;
+    }
+}

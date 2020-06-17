@@ -1,0 +1,319 @@
+body {overflow-x: hidden;}
+
+/* LANDING PAGE*********************************************************************************************************
+********************************************************************************************************************* */
+.landingPage {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/index/pjimage.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    /*PARALLAX*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1{
+    display: inline;
+    font-size: 40px;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 18%;
+    right: 10%;
+
+}
+
+.h2{
+    display: inline;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 25%;
+    right: 7.5%;
+}
+
+hr{
+    width: 6%;
+    height: 5px !important;
+    border: none !important;
+    background-color: #fee7f1;
+    position: absolute;
+    top: 32%;
+    right: 19%;
+}
+
+.landingPage__button {
+    font-family:'Heebo', sans-serif;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    display: inline;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 39%;
+    right: 8.5%;
+}
+
+.landingPage__button:hover{
+    color: #8880c4;
+}
+
+@media (max-width: 575.98px) {
+    .landingPage {
+        background: url('../images/index/pjimage.jpg');
+        background-size: cover;
+
+    }
+
+    .h1 {
+        right: 15%;
+        top: 20%;
+    }
+
+    .h2 {
+        right: 15%;
+        top: 27%;
+        color: white;
+    }
+
+    .landingPage__button{
+        right: 15%;
+        color: white !important;
+    }
+
+    hr {
+        right: 50%;
+    }
+
+}
+
+@media (min-width: 1600px){
+
+    .h1 {
+        right: 11%;
+    }
+
+    .landingPage__button{
+        right: 10%;
+    }
+
+    .h2{
+        right:8.5%;
+    }
+
+    hr {
+        right: 17%;
+    }
+}
+
+/*PRODUCTS*********************************************************************************************************
+********************************************************************************************************************* */
+.image1,.image2, .image3, .image4 {
+    height: auto;
+    width: 25%;
+    float:left;
+}
+
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 84%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 84%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 84%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle4 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 84%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-fluid:hover .image {
+    opacity: 0.3;
+}
+
+.container-fluid:hover .middle1{
+    opacity: 0.8;
+}
+
+.container-fluid:hover .middle2{
+    opacity: 0.8;
+}
+
+.container-fluid:hover .middle3{
+    opacity: 0.8;
+}
+
+.container-fluid:hover .middle4{
+    opacity: 0.8;
+}
+
+.myButton {
+    background-color: #d4c0c8;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-family: 'Vidaloka', serif;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .myButton{
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .middle1, .middle2, .middle3, .middle4{
+        top: 96%;
+    }
+}
+
+/*BLOG/ACCOUNT*********************************************************************************************************
+********************************************************************************************************************* */
+:root {
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+}
+
+.button {
+    letter-spacing: 25px;
+    font-family: 'Heebo', sans-serif;
+    display: block;
+    position: absolute;
+    left: 50%;
+
+    height: 2.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.5em;
+    width: 20rem;
+    text-align: center;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.button:hover {
+    text-decoration: none;
+
+}
+
+.split-screen {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left:0;
+    background-color: #fee7f1;
+}
+
+.split.left:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.33);
+}
+
+.split.right {
+    right:0;
+    background: url('../images/index/pink3.jpg') center center no-repeat;
+    background-size: cover;
+    /*PARALLAX*/
+    background-attachment: fixed;
+}
+
+.split.right:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.33);
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+    transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+.hover-left .right:before {
+    z-index: 2;
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
+
+.hover-right .left:before {
+    z-index: 2;
+}
+
+
+
+

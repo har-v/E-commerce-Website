@@ -1,0 +1,285 @@
+body {
+    overflow-x: hidden;
+}
+
+.pro-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:120px;
+    left: 200px;
+}
+
+.table3 th {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    position:relative;
+    padding:0 50px 10px 0;
+    text-align: left;
+    font-weight: bold;
+    bottom: 49px;
+    left: 360px;
+
+    /* border: 1px solid black;
+  border-collapse: collapse;*/
+}
+
+.table3 td {
+
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    position: relative;
+    padding:0 50px 10px 0;
+    text-align: left;
+    font-weight: bold;
+    left: 360px;
+    bottom: 10px;
+    /*border: 1px solid black;
+ border-collapse: collapse;*/
+}
+
+.add-to-cart {
+    border:1px solid black;
+    display:inline-block;
+    cursor:pointer;
+    color: black;
+    font-family:'Heebo', sans-serif;
+    font-size:15px;
+    padding:16px 31px;
+    text-decoration:none;
+}
+
+.add-to-cart:hover {
+    cursor: pointer;
+    border-color: #d3d3d3;
+}
+
+.accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    left: 550px;
+}
+
+.active, .accordion:hover {
+    background-color: white;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    font-weight: bold;
+}
+
+.panel {
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    padding: 0 18px;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    left: 510px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    margin: 40px 0;
+}
+
+form input[type="number"] {
+    width: 90px;
+    padding: 5px;
+    margin-top: -14px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    color: #555555;
+    border-radius:0;
+
+
+}
+
+form input[type="submit"] {
+    border:1px solid black;
+    display:inline-block;
+    cursor:pointer;
+    color: black;
+    background-color: white;
+    font-family:'Heebo', sans-serif;
+    font-size:15px;
+    padding:16px 31px;
+    text-decoration:none;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+    border-color: #d3d3d3;
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width: 320px) {
+    .pro-img {
+        left: 60px !important;
+    }
+
+    .table3 th {
+        font-size: 20px !important;
+        bottom: -530px!important;
+        left: 48px !important;
+    }
+
+    .table3 td {
+        font-size: 13px !important;
+        padding:0 50px 10px 0;
+
+        bottom: -550px !important;
+        left: 48px !important;
+    }
+
+    form input[type="submit"] {
+        width: 50%!important;
+    }
+
+    .accordion {
+        left: 48px !important;
+        top: 510px !important;
+    }
+
+    .panel {
+        left: 50px !important;
+        top: 480px !important;
+    }
+}
+
+@media (max-width: 800px){
+    .pro-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:150px;
+        left: 100px;
+    }
+
+    .table3 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 30px;
+        position:relative;
+        padding:0 50px 10px 0;
+        text-align: left;
+        font-weight: bold;
+        bottom: -480px;
+        left: 100px;
+
+        /* border: 1px solid black;
+      border-collapse: collapse;*/
+    }
+
+    .table3 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 15px;
+        position: relative;
+        padding:0 50px 10px 0;
+        text-align: left;
+        font-weight: bold;
+        bottom: -500px;
+        left: 100px;
+    }
+
+    form input[type="submit"] {
+        padding:16px 31px;
+        width: 30%;
+    }
+
+    .accordion {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 20%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        font-family: 'Heebo', sans-serif;
+        font-weight: bold;
+        left: 100px;
+        top: 480px;
+    }
+
+    .panel {
+        font-weight: bold;
+        font-family: 'Heebo', sans-serif;
+        padding: 0 18px;
+        position: relative;
+        width: 100%;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        left: 90px;
+        top: 460px;
+    }
+}
+
+
+@media (min-width: 1520px) {
+    .pro-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:210px;
+    }
+    .accordion {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 20%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        font-family: 'Heebo', sans-serif;
+        font-weight: bold;
+        left: 630px;
+
+    }
+
+    .panel {
+        font-weight: bold;
+        font-family: 'Heebo', sans-serif;
+        padding: 0 18px;
+        position: relative;
+        width: 100%;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        left: 630px;
+    }
+}
+
+

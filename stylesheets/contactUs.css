@@ -1,0 +1,476 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/*CART------------------------------------------------------------------------------------------------------------------*/
+.cart {
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+    right: 80px;
+    top: -49px;
+    font-size: 15px;
+}
+
+.cart:hover {
+    color: black;
+}
+
+/*HEADER - MODAL-----------------------------------------------------------------------------------------------------------------*/
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey !important;
+    text-decoration: none !important;
+}
+
+.open {
+    background-color: black;
+    width: 24px;
+    height: 4px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: -60px;
+    right: 35px;
+    z-index: 6;
+}
+
+.open:before {
+    content: "";
+    background-color: black;
+    width: 24px;
+    height: 4px;
+    display: block;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.open:after {
+    content: "";
+    background-color: black;
+    width: 24px;
+    height: 4px;
+    display: block;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.menuOpen:hover .open:before {
+    top: -9px;
+}
+
+.menuOpen:hover .open:after {
+    top: 5px;
+}
+
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tr > td,
+.table-borderless > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+table, th, td {
+    /* border: 1px solid black;
+     border-collapse: collapse;*/
+    margin-left: 15%;
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+}
+
+@media (max-width: 320px){
+    .open {
+        background-color: black;
+        width: 24px;
+        height: 4px;
+        display: block;
+        cursor: pointer;
+        position: relative;
+        top: -60px;
+        right: -100px;
+        z-index: 6;
+    }
+
+    .cart {
+        right: -70px;
+    }
+}
+
+@media (max-width: 575.98px){
+    table, th, td {
+        margin-left: 4%;
+        margin-top: 30%;
+        font-size: 50px;
+    }
+}
+
+.logo {
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    top: -100px;
+    font-size: 25px;
+    margin-left:35px;
+    padding: 40px 0 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+    content: "";
+    background-color: black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+    content: "";
+    background-color: black;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 6;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+}
+
+
+/*SECTION----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+.register {
+    width: 450px;
+    height: 450px;
+    background-color: #ffffff;
+    box-shadow: 0 0 100px 0 rgb(254, 231, 241);
+    margin: 100px auto;
+
+}
+.register h1 {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    padding: 30px 0 20px 0;
+}
+.register form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0px;
+}
+.register form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #d4c0c8;
+    color: #ffffff;
+    border-radius: 100px;
+    margin-top: 1px;
+    z-index: 1;
+
+}
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+    width: 331px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-top: 15px;
+    margin-left: -30px;
+    padding: 0 40px;
+    border-radius: 100px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    outline: none;
+}
+.register form input[type="submit"] {
+    outline: none;
+    width: 39%;
+    padding: 15px;
+    margin-top: -2px;
+    background-color: #d4c0c8;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+.register form input[type="submit"]:hover {
+    background-color: #95878d;
+    transition: background-color 0.2s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto;  /*Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.71) !important; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 50%;
+
+    overflow-y: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.myBtn{
+    background-color: white;
+    border: none;
+}
+
+.button:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+@media (max-width: 599px) {
+    .container{
+        width: 100%;
+        position: fixed;
+        top: 110px;
+        height: 50%;
+        left: 140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container{
+        width: 100%;
+        position: fixed;
+        top: 110px;
+        height: 100%;
+        left: 380px;
+    }
+}
+
+/*FOOTER----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+.footer #button{
+    width:80px;
+    left: 35px;
+    bottom: 5px;
+    font-size: 30px;
+    color:black;
+    margin:0 auto;
+    position:relative;
+
+}
+
+.footer-links{
+    color: white;
+}
+
+.footer {
+    bottom:0;
+    left:0;
+    position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index:3;
+}
+.footer:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    height: 14em;
+}
+.footer #container{
+    margin-top:5px;
+    width:100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.95);
+}
+.footer #cont{
+    position:relative;
+    top:-20px;
+    right:200px;
+    width:500px;
+    height:auto;
+    margin:0 auto;
+}
+.footer_center{
+    width:500px;
+    float:left;
+
+}
+
+.table4 th {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 16px;
+    position:relative;
+    padding:0 400px 10px 0;
+    text-align: left;
+    color: white;
+    white-space: nowrap;
+
+
+}
+
+.table4 td {
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    color: white;
+
+}
+
+@media (max-width: 800px) {
+    .footer #cont{
+        position:relative;
+        top:-100px;
+        right:130px;
+        width:500px;
+        height:auto;
+        margin:0 auto;
+    }
+
+    .table4 th {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 14px !important;
+        position:relative;
+        text-align: left;
+        color: white;
+        white-space: nowrap;
+        padding-left: 10%;
+        left: 20%;
+    }
+
+    .table4 td {
+        font-family: 'Heebo', sans-serif;
+        font-size: 12px !important;
+        position: relative;
+        text-align: left;
+        color: white;
+        word-wrap: break-word;
+        padding-left: 10%;
+        left: 20%;
+    }
+
+    .table4 {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
