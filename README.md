@@ -12,7 +12,6 @@ Built a e-commerce website for my 4th year's honours project, which was coded in
 
 ### Register Form
 ![signupform](https://user-images.githubusercontent.com/66881641/84926877-eed0e400-b0c3-11ea-9ec8-14429ceb9946.PNG)
-### Account Page
 
 ## Features
 * Items
@@ -23,6 +22,4 @@ Built a e-commerce website for my 4th year's honours project, which was coded in
    * Account page where users can change their login details.
    * Basic PHP data retrieve for password recovery.
 * Blog
- * Users can like and comment on blog posts
- 
-
+   * Users can like and comment on blog posts
